@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link href="{{url_for('static',filename='css/output.css')}}" rel="stylesheet">
+    <title>Flask-astic</title>
+</head>
+<body class="bg-slate-200  bg-opacity-40 text-black">
+    <header class=" inline-block bg-green-300 bg-opacity-45 w-full text-center top-0 font-bold h-10 text-black shadow-xl  ">
+        <nav class=" text-black font-arthemys text-xl">
+            <a href="/" class=" pr-10" >Accueil</a>
+            <a href="/about" class=" pr-10" >A propos</a>
+            <a href="/blog" class=" pr-10">Notre Blog</a>
+            <a href="/contact" class=" pr-10" >Contact</a>
+            <a href="/login" class=" pr-10"  ><img src="/static/images/profile.png" alt="Profil image" class=" w-5 h-5 inline-block"></a>
+        </nav>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer class=" text-center  w-full  bottom-0 mt-5 fixed inline-block bg-green-300">
+        <div class="containerfoot  font-arthemys pr-10">
+        &copy; Denis MATHIEU 2024 |&nbsp;
+         <a href="https://github.com/DenisDMU" target="_blank" rel="noopener noreferrer"><img src="/static/images/git.png" alt="Mon git" class=" w-5 h-5 inline-block" ></a> &nbsp;
+         |&nbsp; mail : denis.mathieu.pro@gmail.com
+        </div>
+    </footer>
+</body>
+</html>
+<!-- Profitons de Jinja pour faire le template, ainsi je peux rappeller le header footer avec la feuille de style tailwind et mes scripts -->

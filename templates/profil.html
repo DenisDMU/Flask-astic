@@ -1,0 +1,30 @@
+<title>Profil</title>
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1 class="text-center font-arthemys  align-middle uppercase  pb-10 font-bold text-green-700 opacity-70 mt-10  text-6xl underline">Profil de : {{ aut['auteur'] }}</h1>
+
+<div class="container mx-auto p-5 text-lg font-saol">
+    <p>
+        <ul class="text-gray-500  rounded-xl overflow-hidden shadow-lg   w-80 h-56"> 
+    <div class="font-bold text-green-700 opacity-70">
+        Passions : 
+    </div>
+    <p>
+        <li class=" text-gray-400 ml-5">{{aut['titre']}}</li>
+    </ul>
+    </p>
+</div>
+
+<div class="container mx-auto p-5 text-lg font-saol">
+    <h3 class="font-bold text-green-700 opacity-70">Petits mots sur moi -> </h3>
+    <p class="text-gray-500 text-left rounded-xl overflow-hidden shadow-lg ">Bon, j'ai réussi un peu à gérer le profil.
+        Il manque bien sûr tout les titres d'articles mais je bouclais sur une seule entrée dans la DB. Je suis déjà content
+        d'avoir pu réussir à afficher le pseudo de l'auteur sur son profil. Une petite victoire ! 😁
+    </p>
+    <p class=" text-center mt-10 text-lg font-saol "><a href="/blog" class="border-b-2  border-black"> Retour au Blog</a></p>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link href="{{url_for('static',filename='css/output.css')}}" rel="stylesheet">
+    <title>Flask-astic</title>
+</head>
+<body class="bg-slate-200  bg-opacity-40 text-black">
+    {% extends "layout.html" %}
+   {% block content %}
+    <div class="container  text-black font-semibold">
+        <h1 class=" text-center align-middle uppercase font-arthemys pb-10 font-bold text-green-700 opacity-70 mt-10  text-6xl underline">Flask-astic</h1>
+        <div class="first text-center mt-5 justify-center ml-10 text-lg font-saol">
+            <p>Depuis des années, nous sommes passionés par l'univers des boissons douces.</p>
+            <p>C'est pourquoi, en Février 2024, nous nous lançons dans la création d'un site communautaire pour partager
+                notre passion et nos valeurs.<div class=" text-slate-400 opacity-50 font-saol">Bon aussi parce que je dois passer un test 😁</div>
+            </p>
+        </div>
+        <div class="second text-center mt-10 ml-10  text-lg font-saol">
+            <p>Vous pouvez trouver un espace blog, véritable coeur de notre projet. Nous 
+                proposons les dernières news, des conseils, mais aussi des résumés de l'histoire.
+            </p>
+            <p>Aussi, un espace membre, tout du moins une fiche utilisateur pour le moment. A terme, 
+                nous aimerions ajouter un forum, petite piqure de rappel des années 2000, mais aussi organiser
+                des rencontres, des sorties et voyages.
+            </p>
+        </div>
+        <div class="third text-center mt-10 ml-10 text-lg font-saol">
+            <p>Enfin, si vous avez des questions sur notre projet, ou bien, voulez nous rejoindre, retrouvez un formulaire de contact 
+                sur notre page qui porte le même nom (On fait bien les choses hein.).
+            </p>
+        </div>
+        <img src="/static/images/flaskillu.png" class=" w-36 h-36 center justify-center ml-auto mr-auto mt-20" alt="Illustration Flask">
+    </div>
+   {% endblock %}
+
+</body>
+</html>

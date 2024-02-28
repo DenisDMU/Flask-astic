@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos</title>
+</head>
+<body class="bg-slate-200  bg-opacity-40 text-black">
+    {% extends "layout.html" %}
+     {% block content %}  
+     <div class="container  text-black font-semibold">
+        <h1 class=" text-center font-bold text-green-700 opacity-70 mt-10  font-arthemys text-6xl underline uppercase">A propos</h1>
+        <div class="propos text-center  justify-center ml-10 mt-20">
+            <p>Site réalisé en <strong>Flask</strong>, framework de Python. Avec l'aide TailWindCSS pour le style.</p>
+            <p>Pour montrer l'utilisation des routes, de la gestion de base de données générée par SQLite.</p>
+        </div>
+        <div class="merci text-center mt-10 ml-10">
+            En remerciant tout les tutos, la documentation et les vidéos m'ayant aidé à constituer ce site.
+        </div>
+     </div>
+      {% endblock %}
+</body>
+</html>

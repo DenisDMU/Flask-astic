@@ -1,0 +1,12 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1 class="text-center align-middle uppercase   font-arthemys  pb-10 font-bold text-green-700 opacity-70 mt-10  text-6xl underline">{{ article['titre'] }}</h1>
+<p class="text-gray-500 mt-10 text-center text-lg font-saol">{{ article['contenu'] }}</p>
+<p class=" mt-52 opacity-40 text-center font-saol text-xs"> Article écrit par {{ article['auteur'] }}</p>
+<br>
+<p class=" text-center mt-10 text-lg font-saol "><a href="/blog" class="border-b-2  border-black"> Retour au Blog</a></p>
+
+{% endblock %} 
