@@ -6,7 +6,7 @@ co = connection.cursor()
 co.execute('DROP TABLE IF EXISTS articles')
 co.execute('DROP TABLE IF EXISTS contacts')
 
-#Création des tables, articles et celle du formulaire
+#Création des tables, articles et celle du formulaire contacts, du SQL pur comme on aime (D'ailleurs, TEXT et pas VARCHAR avec SQLite)
 co.execute('''CREATE TABLE articles
            (id INTEGER PRIMARY KEY AUTOINCREMENT,
            titre TEXT,

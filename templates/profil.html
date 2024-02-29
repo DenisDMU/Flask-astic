@@ -2,7 +2,7 @@
 {% extends "layout.html" %}
 
 {% block content %}
-
+<!-- On récupère le nom de l'auteur avec la fonction qu'on a fait dans le route dans app.py -->
 <h1 class="text-center font-arthemys  align-middle uppercase  pb-10 font-bold text-green-700 opacity-70 mt-10  text-6xl underline">Profil de : {{ aut['auteur'] }}</h1>
 
 <div class="container mx-auto p-5 text-lg font-saol">
@@ -12,6 +12,7 @@
         Passions : 
     </div>
     <p>
+        <!-- Je voulais récupérer chaque titre d'articles et incorporer des liens pour y aller, mais je n'ai pas réussi a boucler comme il faut, alors j'en laisse qu'un seul -->
         <li class=" text-gray-400 ml-5">{{aut['titre']}}</li>
     </ul>
     </p>

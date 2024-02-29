@@ -5,9 +5,11 @@ import sqlite3
 connect = sqlite3.connect('database.db')
 cursor = connect.cursor()
 
+#Création d'auteur, chacun ont 2 articles donc j'ai décidé de les placer dans une constante
 same_auteur = 'MintAddict'
 same_auteur2 = 'CoffeCacaoAndAll'
 
+#Création de faux articles a rentrer dans la DB
 articles = [
     ('La menthe','Decouvrez son histoire',
      'Depuis des années, la menthe est au coeur de nos vies. Son gout frais, mais aussi sa douceur ne font qu\'un pour nous émerveiller.',
@@ -24,8 +26,10 @@ articles = [
      'static/blog/imgart4.jpg','static/blog/pp2.jpeg',same_auteur2)
 ]
 
+#Je boucle sur mes articles pour les rentrer un par un dans la DB avec les infos dans les bonnes colonnes
 for article in articles:
     cursor.execute('''INSERT INTO articles (titre,extrait,contenu,image_article,profil_pic,auteur) VALUES(?,?,?,?,?,?)''',article)
-    
+   
+#Je commit ma requête et ensuite cloture la connexion à la DB 
 connect.commit()
 connect.close()

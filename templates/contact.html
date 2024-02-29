@@ -1,6 +1,7 @@
 <title>Contact</title>
 {% extends "layout.html" %}
 
+<!-- Formulaire de contact qui est le plus classique possible, action POST bien entendu pour pouvoir enregister dans notre DB les infos récoltées -->
 {% block content %}
     <h1 class="text-center align-middle uppercase pb-10 font-bold font-arthemys  text-green-700 opacity-70 mt-10 text-6xl underline">Contact</h1>
     {% with messages = get_flashed_messages() %}
