@@ -19,4 +19,6 @@
 
 <img width="1470" alt="image" src="https://github.com/DenisDMU/Flask-astic/assets/146975509/15cb296b-1b27-415a-a9c5-7fc9423e4b76">
 
+<img width="1470" alt="image" src="https://github.com/DenisDMU/Flask-astic/assets/146975509/57decb1f-20f6-466b-84b3-7925ff51cf07">
+
  ### Merci.
