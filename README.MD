@@ -14,11 +14,5 @@
 * En dehors de ça, plutôt tranquille, la créationd de DB est super cool avec SQLite.
 * Surement des améliorations à faire pour ce qui est de la DB.
 
-# Screenshot ->
-<img width="1470" alt="image" src="https://github.com/DenisDMU/Flask-astic/assets/146975509/c7b5b2ea-215d-4697-9864-19af4ba31419">
-
-<img width="1470" alt="image" src="https://github.com/DenisDMU/Flask-astic/assets/146975509/15cb296b-1b27-415a-a9c5-7fc9423e4b76">
-
-<img width="1470" alt="image" src="https://github.com/DenisDMU/Flask-astic/assets/146975509/57decb1f-20f6-466b-84b3-7925ff51cf07">
 
  ### Merci.
